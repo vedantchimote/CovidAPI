@@ -8,6 +8,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.server.ResponseStatusException;
 
+/**
+ * @eo.api-type http
+ * @eo.path
+ */
+
 @Service
 @Slf4j
 public class CovidService {
@@ -24,6 +29,13 @@ public class CovidService {
     @Autowired
     private RestTemplate restTemplate;
 
+    /**
+     * @eo.name getAllCountryCovidData
+     * @eo.url
+     * @eo.method get
+     * @eo.request-type formdata
+     * @return Object
+     */
     public Object getAllCountryCovidData() {
             try {
                 //Header value is set
