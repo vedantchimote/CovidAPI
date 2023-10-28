@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+class tech.vedantchimote.CovidAPI.SpringbootApplication {
++ {static} void main(String[])
+}
+class tech.vedantchimote.CovidAPI.controller.CovidController {
+- CovidService covidService
++ ResponseEntity<?> callRapidEndpointToGetCovidData()
+}
+class tech.vedantchimote.CovidAPI.SpringbootApplicationTests {
+~ void contextLoads()
+}
+class tech.vedantchimote.CovidAPI.service.CovidService {
+- String url
+- String xRapidApiKey
+- String getxRapidApiHost
+- RestTemplate restTemplate
++ Object getAllCountryCovidData()
+}
+class tech.vedantchimote.CovidAPI.config.RestTemplateConfig {
++ RestTemplate restTemplate(RestTemplateBuilder)
+}
+@enduml

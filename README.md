@@ -7,4 +7,4 @@ from RapidAPI.com
 
 Provide X-RapidAPI-Key and X-RapidAPI-Host values in the application.yml file
 
-<img src="CovidAPI-UML.png">
+<img src="covid_class_diagram.png" alt="CovidAPI class diagram">
