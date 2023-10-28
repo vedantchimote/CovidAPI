@@ -6,3 +6,5 @@ Subscribed and Using Corona Virus World and India Data ( https://rapidapi.com/sp
 from RapidAPI.com
 
 Provide X-RapidAPI-Key and X-RapidAPI-Host values in the application.yml file
+
+<img src="CovidAPI-UML.png">
